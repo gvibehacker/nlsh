@@ -1,0 +1,42 @@
+{
+  "name": "@gvibehacker/nlsh",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Natural language shell extension powered by pi-agent-core",
+  "main": "dist/index.js",
+  "bin": {
+    "nlsh": "dist/index.js"
+  },
+  "files": [
+    "dist/**/*.js"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/index.js",
+    "lint": "eslint src --ext ts --report-unused-disable-directives --max-warnings 5"
+  },
+  "keywords": [
+    "shell",
+    "llm",
+    "cli"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@mariozechner/pi-agent-core": "latest",
+    "@mariozechner/pi-ai": "latest",
+    "@sinclair/typebox": "^0.34.41"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.0",
+    "@typescript-eslint/eslint-plugin": "^7.3.1",
+    "@typescript-eslint/parser": "^7.3.1",
+    "dotenv-cli": "^7.4.2",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "prettier": "^3.2.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  }
+}
